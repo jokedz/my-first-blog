@@ -8,10 +8,17 @@
         <p>szukając lisa </p>
         <div>
         <a href="https://www.facebook.com/photo.php?fbid=959431747429165&set=a.146267338745614.21779.100000870464505&type=3&theater">więcej info tutaj</a>
+        {% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaks }}</p>
+    </div>
+{% endfor %}
+
         <img src="https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/11781807_959431747429165_5619774471796090434_n.jpg?oh=f111011ec37d9c8227a90f9057bf4716&oe=56E8E8C5"/>
         	<H2>ISLANDIA</H2>
 
-        <p> Przez 10 dni Islandia zadziwiała nas nieograniczoną przestrzenią, kontrastami, zmiennością krajobrazów i pogody. Podróżując drogą krajową nr 1 tzw. Ringroadem – zaczynając d pól lawowych, gdzie skały wyglądają jak uśpione, schowane pod tofrowym pokryciem trole, przez obszary geotermalne -  gejzery, gorące, rzeki i źródła, pustynie żwirowe, bazaltowe plaże, wodospady, wrzosowiska, łąki, skały w kolorach tęczy, oceanu po lodowce, wulkany i fiordy nasze oczy otwierały się coraz bardziej ze zdziwienia. 
-Lokalsi i renifery też nas urzekli. Pewnie ciężko w to uwierzyć, ale nie było takiej rzeczy, która by mi się w Islandii nie podobała, chociaż nie próbowałam selsreifar, czyli kwaszonych płetw foki lub zgniłego mięsa maskonura - jako potrawy świątecznej.</p>
+        
     </body>
 </html>
